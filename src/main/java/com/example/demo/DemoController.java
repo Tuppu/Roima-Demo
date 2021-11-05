@@ -17,7 +17,7 @@ class DemoController {
     public DemoController() {
     }
     
-    @RequestMapping(value = "/demo", method = RequestMethod.POST)
+    @RequestMapping(value = "/interface", method = RequestMethod.POST, consumes = "application/xml")
     public String test(@RequestBody String inputPayload) {
 
         DemoTransformer response = new DemoTransformer();
